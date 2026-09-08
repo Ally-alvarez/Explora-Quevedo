@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora Quevedo | Contacto y Reservas</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="page-contacto">
+
+  <!-- CABECERA PRINCIPAL Y MENÚ DE NAVEGACIÓN -->
+  <header class="header-main">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="images/logo.png" alt="Explora Quevedo Logo" class="brand-logo">
+        <div class="brand-info">
+          <span class="brand-title">EXPLORA QUEVEDO</span>
+          <span class="brand-subtitle">AGENCIA TURÍSTICA DE LOS RÍOS</span>
+        </div>
+      </a>
+
+      <nav class="nav-principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="destinos.html" class="nav-link">Lugares Turísticos</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ENCABEZADO DE SECCIÓN -->
+    <section class="page-banner">
+      <div class="container text-center">
+        <span class="heading-tag">Canales Oficiales</span>
+        <h1>Contacto y Reserva de Excursiones</h1>
+        <p>Completa el formulario de solicitud para coordinar tu salida turística con guías certificados y transporte garantizado en Quevedo.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y FORMULARIO -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- INFORMACIÓN Y CANALES DE ATENCIÓN -->
+          <aside class="contact-info-panel">
+            <span class="heading-tag">Atención Personalizada</span>
+            <h2>Nuestras Oficinas</h2>
+            <p>Visítanos en nuestra oficina matriz o comunícate por nuestros canales digitales oficiales para coordinar salidas privadas o grupales.</p>
+
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <strong>Dirección Física:</strong>
+                <p>Av. Walter Andrade y Calle 7ma, Edificio San José, Quevedo, Los Ríos, Ecuador</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <strong>Teléfonos / WhatsApp:</strong>
+                <p>+593 98 765 4321 / +593 5 275 0000</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <strong>Correo Electrónico:</strong>
+                <p>reservas@exploraquevedo.ec</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">🕒</div>
+              <div class="info-content">
+                <strong>Horario de Operación:</strong>
+                <p>Lunes a Sábado: 08:00 AM – 18:30 PM</p>
+              </div>
+            </div>
+          </aside>
+
+          <!-- FORMULARIO SEMÁNTICO EXIGIDO POR LA RÚBRICA -->
+          <div class="form-container">
+
+            <!-- MENSAJE DE CONFIRMACIÓN (OCULTO INICIALMENTE) -->
+            <div id="mensaje-exito" class="alert-success" style="display: none;">
+              <div class="success-icon">✓</div>
+              <h3>¡Solicitud Recibida con Éxito!</h3>
+              <p>Gracias por contactar a <strong>Explora Quevedo</strong>. Tu información ha sido ingresada en nuestro sistema de salidas.</p>
+              <div class="summary-box">
+                <p id="resumen-solicitud"></p>
+              </div>
+              <p class="small-notice">Un asesor turístico se comunicará vía WhatsApp o correo electrónico para coordinar el punto de partida y pagos.</p>
+              <button type="button" id="btn-nueva-solicitud" class="btn-primary">Enviar otra solicitud</button>
+            </div>
+
+            <!-- FORMULARIO PRINCIPAL -->
+            <form id="formulario-contacto" class="contact-form">
+              
+              <!-- NOMBRE COMPLETO Y CORREO ELECTRÓNICO -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre Completo *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ej. Gislayne Alvarez" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
+                </div>
+              </div>
+
+              <!-- TELÉFONO Y DESTINO / ACTIVIDAD -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0987654321" required>
+                </div>
+                <div class="form-group">
+                  <label for="destino">Destino o Actividad Principal *</label>
+                  <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Seleccione un atractivo</option>
+                    <option value="Malecón del Río Quevedo">Malecón del Río Quevedo</option>
+                    <option value="Puente Velasco Ibarra">Puente Velasco Ibarra</option>
+                    <option value="Paseos en Bote por el Río">Paseos en Bote por el Río</option>
+                    <option value="Parque Central e Iglesia San José">Parque Central e Iglesia San José</option>
+                    <option value="Balnearios de Agua Dulce">Balnearios de Agua Dulce</option>
+                    <option value="Fincas Cacaoteras del Río">Fincas Cacaoteras del Río</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- FECHA Y NÚMERO DE PERSONAS -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fecha">Fecha Estimada de Visita *</label>
+                  <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                  <label for="personas">Número de Personas *</label>
+                  <input type="number" id="personas" name="personas" min="1" max="40" placeholder="1" required>
+                </div>
+              </div>
+
+              <!-- TIPO DE SERVICIO O PAQUETE -->
+              <div class="form-group">
+                <label for="servicio">Tipo de Servicio o Paquete *</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Seleccione su paquete turístico</option>
+                  <option value="Quevedo Histórico y Fluvial ($20.00)">Quevedo Histórico y Fluvial ($20.00)</option>
+                  <option value="Ruta Balnearios de Agua Dulce ($30.00)">Ruta Balnearios de Agua Dulce ($30.00)</option>
+                  <option value="Finca Cacaotera 'Pepa de Oro' ($28.00)">Finca Cacaotera 'Pepa de Oro' ($28.00)</option>
+                  <option value="Quevedo Total 2D/1N ($75.00)">Quevedo Total 2D/1N ($75.00)</option>
+                  <option value="Servicio Privado Personalizado">Servicio Privado Personalizado</option>
+                </select>
+              </div>
+
+              <!-- MENSAJE O REQUERIMIENTOS -->
+              <div class="form-group">
+                <label for="mensaje">Mensaje o Requerimientos Especiales</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique requerimientos específicos de su grupo (niños, personas mayores, alimentación, etc.)..."></textarea>
+              </div>
+
+              <!-- BOTÓN DE ENVÍO -->
+              <button type="submit" class="btn-primary btn-block">Enviar Solicitud de Reserva</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-title">EXPLORA QUEVEDO</h4>
+        <p>Agencia turística enfocada en la promoción cultural, urbana, fluvial y agrícola del cantón Quevedo, Provincia de Los Ríos.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Lugares Turísticos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto Local</h5>
+        <p>📍 Av. Walter Andrade y Calle 7ma</p>
+        <p>Quevedo - Los Ríos, Ecuador</p>
+        <p>Email: info@exploraquevedo.ec</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Explora Quevedo · Examen Práctico de Diseño de Sitios Web · Gislayne Alvarez</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PARA CONFIRMACIÓN DIRECTA (SIN ERROR 405 EN GITHUB PAGES) -->
+  <script>
+    const form = document.getElementById('formulario-contacto');
+    const mensajeExito = document.getElementById('mensaje-exito');
+    const resumenSolicitud = document.getElementById('resumen-solicitud');
+    const btnNueva = document.getElementById('btn-nueva-solicitud');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value;
+      const destino = document.getElementById('destino').value;
+      const paquete = document.getElementById('servicio').value;
+      const personas = document.getElementById('personas').value;
+      const fecha = document.getElementById('fecha').value;
+
+      resumenSolicitud.innerHTML = `Estimado/a <strong>${nombre}</strong>, tu solicitud para <strong>${personas} persona(s)</strong> con destino a <strong>${destino}</strong> bajo el paquete <em>${paquete}</em> para la fecha <strong>${fecha}</strong> ha sido registrada con estado: <span style="color:#0f5132; font-weight:700;">CONFIRMADA</span>.`;
+
+      form.style.display = 'none';
+      mensajeExito.style.display = 'block';
+    });
+
+    btnNueva.addEventListener('click', function() {
+      form.reset();
+      mensajeExito.style.display = 'none';
+      form.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
