@@ -27,7 +27,7 @@ El sitio cuenta con una arquitectura de 5 páginas enlazadas mediante navegació
 ---
 
 ## Captura del Sitio
-![Vista previa de Explora Quevedo](images/hero.webp)
+![Vista previa de Explora Quevedo](images/preview.png)
 
 ---
 
