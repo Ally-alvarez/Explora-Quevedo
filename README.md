@@ -19,11 +19,10 @@ El sitio cuenta con una arquitectura de 5 páginas enlazadas mediante navegació
 ---
 
 ## Tecnologías Utilizadas
-* **HTML5:** Marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<form>`).
-* **CSS3:** Hoja de estilos externa con Variables CSS, Box Model, diseño adaptable mediante CSS Flexbox, CSS Grid y Media Queries.
-* **JavaScript:** Manejo de eventos del DOM para confirmación visual inmediata en el formulario sin recarga de página.
-* **Git & GitHub:** Sistema de control de versiones y gestión de repositorio en rama `main`.
-* **GitHub Pages:** Despliegue continuo y alojamiento web público en la nube bajo protocolo seguro HTTPS.
+* **HTML5:** Estructuración y marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<form>`).
+* **CSS3:** Hoja de estilos externa con Variables CSS, Box Model, diseño adaptable con CSS Flexbox, CSS Grid y Media Queries sin frameworks.
+* **Git & GitHub:** Sistema de control de versiones y repositorio en la rama `main`.
+* **GitHub Pages:** Despliegue estático y alojamiento web público bajo protocolo seguro HTTPS.
 
 ---
 

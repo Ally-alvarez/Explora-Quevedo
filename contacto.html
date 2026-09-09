@@ -85,20 +85,9 @@
             </div>
           </aside>
 
+          <!-- FORMULARIO 100% PURO HTML5 SIN SCRIPTS -->
           <div class="form-container">
-
-            <div id="mensaje-exito" class="alert-success" style="display: none;">
-              <div class="success-icon">✓</div>
-              <h3>¡Solicitud Recibida con Éxito!</h3>
-              <p>Gracias por contactar a <strong>Explora Quevedo</strong>. Tu información ha sido ingresada en nuestro sistema de salidas.</p>
-              <div class="summary-box">
-                <p id="resumen-solicitud"></p>
-              </div>
-              <p class="small-notice">Un asesor turístico se comunicará vía WhatsApp o correo electrónico para coordinar el punto de partida y pagos.</p>
-              <button type="button" id="btn-nueva-solicitud" class="btn-primary">Enviar otra solicitud</button>
-            </div>
-
-            <form id="formulario-contacto" class="contact-form">
+            <form action="#" method="get" class="contact-form">
               
               <div class="form-row">
                 <div class="form-group">
@@ -120,12 +109,12 @@
                   <label for="destino">Destino o Atractivo Principal *</label>
                   <select id="destino" name="destino" required>
                     <option value="" disabled selected>Seleccione un atractivo</option>
-                    <option value="1. Malecón del Río Quevedo">1. Malecón del Río Quevedo</option>
-                    <option value="2. Puente Velasco Ibarra">2. Puente Velasco Ibarra</option>
-                    <option value="3. Paseos en Bote por el Río Quevedo">3. Paseos en Bote por el Río Quevedo</option>
-                    <option value="4. Parque Central e Iglesia San José">4. Parque Central e Iglesia San José</option>
-                    <option value="5. Balnearios de Agua Dulce">5. Balnearios de Agua Dulce</option>
-                    <option value="6. Fincas Cacaoteras del Río">6. Fincas Cacaoteras del Río</option>
+                    <option value="malecon">1. Malecón del Río Quevedo</option>
+                    <option value="puente">2. Puente Velasco Ibarra</option>
+                    <option value="bote">3. Paseos en Bote por el Río Quevedo</option>
+                    <option value="parque">4. Parque Central e Iglesia San José</option>
+                    <option value="balnearios">5. Balnearios de Agua Dulce</option>
+                    <option value="cacao">6. Fincas Cacaoteras del Río</option>
                   </select>
                 </div>
               </div>
@@ -142,24 +131,23 @@
               </div>
 
               <div class="form-group">
-                <label for="servicio">Tipo de Servicio o Paquete (4 Opciones) *</label>
+                <label for="servicio">Tipo de Servicio o Paquete *</label>
                 <select id="servicio" name="servicio" required>
                   <option value="" disabled selected>Seleccione su paquete turístico</option>
-                  <option value="Quevedo Histórico y Fluvial ($20.00)">1. Quevedo Histórico y Fluvial ($20.00 / pers.)</option>
-                  <option value="Ruta Balnearios de Agua Dulce ($30.00)">2. Ruta Balnearios de Agua Dulce ($30.00 / pers.)</option>
-                  <option value="Finca Cacaotera 'Pepa de Oro' ($28.00)">3. Finca Cacaotera 'Pepa de Oro' ($28.00 / pers.)</option>
-                  <option value="Quevedo Total 2D/1N ($75.00)">4. Quevedo Total 2D/1N ($75.00 / pers.)</option>
+                  <option value="historico">1. Quevedo Histórico y Fluvial ($20.00 / pers.)</option>
+                  <option value="balnearios">2. Ruta Balnearios de Agua Dulce ($30.00 / pers.)</option>
+                  <option value="cacao">3. Finca Cacaotera 'Pepa de Oro' ($28.00 / pers.)</option>
+                  <option value="total">4. Quevedo Total 2D/1N ($75.00 / pers.)</option>
                 </select>
               </div>
 
               <div class="form-group">
                 <label for="mensaje">Mensaje o Requerimientos Especiales</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique requerimientos específicos de su grupo (niños, personas mayores, alimentación, etc.)..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique requerimientos específicos de su grupo (niños, personas mayores, etc.)..."></textarea>
               </div>
 
               <button type="submit" class="btn-primary btn-block">Enviar Solicitud de Reserva</button>
             </form>
-
           </div>
 
         </div>
@@ -200,32 +188,5 @@
     </div>
   </footer>
 
-  <script>
-    const form = document.getElementById('formulario-contacto');
-    const mensajeExito = document.getElementById('mensaje-exito');
-    const resumenSolicitud = document.getElementById('resumen-solicitud');
-    const btnNueva = document.getElementById('btn-nueva-solicitud');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const nombre = document.getElementById('nombre').value;
-      const destino = document.getElementById('destino').value;
-      const paquete = document.getElementById('servicio').value;
-      const personas = document.getElementById('personas').value;
-      const fecha = document.getElementById('fecha').value;
-
-      resumenSolicitud.innerHTML = `Estimado/a <strong>${nombre}</strong>, tu solicitud para <strong>${personas} persona(s)</strong> con destino a <strong>${destino}</strong> bajo el paquete <em>${paquete}</em> para la fecha <strong>${fecha}</strong> ha sido registrada con estado: <span style="color:#0f5132; font-weight:700;">CONFIRMADA</span>.`;
-
-      form.style.display = 'none';
-      mensajeExito.style.display = 'block';
-    });
-
-    btnNueva.addEventListener('click', function() {
-      form.reset();
-      mensajeExito.style.display = 'none';
-      form.style.display = 'block';
-    });
-  </script>
 </body>
 </html>
