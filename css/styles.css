@@ -1,16 +1,16 @@
 /* ===================================================
-   VARIABLES GLOBALES (EXPLORA QUEVEDO - TURISMO FLUVIAL)
+   VARIABLES GLOBALES (EXPLORA QUEVEDO)
    =================================================== */
 :root {
-  --primary-color: #0c2340;       /* Azul marino profundo fluvial */
-  --primary-light: #1d3557;       /* Azul intermedio */
-  --accent-color: #e65c00;        /* Naranja solar tropical */
-  --accent-hover: #cf4f00;        /* Naranja oscuro para hover */
-  --bg-page: #f8fafc;             /* Fondo gris claro limpio */
-  --bg-white: #ffffff;            /* Blanco puro para tarjetas */
-  --text-main: #1e293b;           /* Texto principal oscuro */
-  --text-muted: #64748b;          /* Texto secundario atenuado */
-  --border-color: #e2e8f0;        /* Bordes sutiles */
+  --primary-color: #0c2340;
+  --primary-light: #1d3557;
+  --accent-color: #e65c00;
+  --accent-hover: #cf4f00;
+  --bg-page: #f8fafc;
+  --bg-white: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
   --shadow-md: 0 10px 25px -3px rgba(12, 35, 64, 0.08);
   --shadow-lg: 0 20px 35px -4px rgba(12, 35, 64, 0.12);
@@ -21,9 +21,7 @@
   --transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* ===================================================
-   RESET Y MODELO DE CAJA (BOX MODEL)
-   =================================================== */
+/* RESET & MODELO DE CAJA */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -69,9 +67,7 @@ ul {
   text-align: center;
 }
 
-/* ===================================================
-   ENCABEZADO Y NAVEGACIÓN (FLEXBOX)
-   =================================================== */
+/* ENCABEZADO Y NAVEGACIÓN */
 .header-main {
   background-color: var(--bg-white);
   border-bottom: 1px solid var(--border-color);
@@ -146,9 +142,7 @@ ul {
   background-color: rgba(230, 92, 0, 0.08);
 }
 
-/* ===================================================
-   BOTONES REUTILIZABLES
-   =================================================== */
+/* BOTONES */
 .btn-primary {
   display: inline-block;
   background-color: var(--accent-color);
@@ -193,16 +187,15 @@ ul {
   text-align: center;
 }
 
-/* ===================================================
-   HERO EN INDEX (PÁGINA 1)
-   =================================================== */
+/* HERO */
 .hero-section {
   position: relative;
   background: 
-    linear-gradient(135deg, rgba(12, 35, 64, 0.9) 0%, rgba(29, 53, 87, 0.85) 100%),
+    radial-gradient(circle at center, rgba(12, 35, 64, 0.72) 0%, rgba(8, 22, 40, 0.94) 100%),
     url('../images/hero.webp') center/cover no-repeat;
   color: var(--bg-white);
-  padding: 120px 20px;
+  padding: 130px 20px 105px 20px;
+  min-height: 84vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -214,14 +207,17 @@ ul {
 }
 
 .hero-tag {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 6px 16px;
+  backdrop-filter: blur(8px);
+  padding: 8px 22px;
   border-radius: 30px;
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  color: #ffedd5;
   margin-bottom: 22px;
 }
 
@@ -250,9 +246,46 @@ ul {
   flex-wrap: wrap;
 }
 
-/* ===================================================
-   SECCIONES Y ENCABEZADOS COMUNES
-   =================================================== */
+.hero-stats-strip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  padding: 12px 28px;
+  border-radius: 40px;
+  margin-top: 38px;
+  gap: 24px;
+}
+
+.stat-pill {
+  text-align: center;
+}
+
+.stat-pill strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  line-height: 1.2;
+}
+
+.stat-pill span {
+  font-size: 0.74rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-separator {
+  width: 1px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ENCABEZADOS DE PÁGINA */
 .page-banner {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
   color: var(--bg-white);
@@ -297,9 +330,7 @@ ul {
   font-size: 1rem;
 }
 
-/* ===================================================
-   TARJETAS DESTACADAS EN INDEX (GRID)
-   =================================================== */
+/* CARDS EN INDEX */
 .featured-section {
   padding: 85px 0;
 }
@@ -411,9 +442,7 @@ ul {
   color: #cbd5e1;
 }
 
-/* ===================================================
-   DESTINOS (PÁGINA 2 - DESTINOS.HTML)
-   =================================================== */
+/* DESTINOS */
 .places-section {
   padding: 85px 0;
 }
@@ -511,9 +540,7 @@ ul {
   padding: 10px 20px;
 }
 
-/* ===================================================
-   SERVICIOS / PAQUETES (PÁGINA 3 - SERVICIOS.HTML)
-   =================================================== */
+/* SERVICIOS / PAQUETES */
 .pricing-section {
   padding: 85px 0;
 }
@@ -638,9 +665,7 @@ ul {
   text-align: center;
 }
 
-/* ===================================================
-   NOSOTROS (PÁGINA 4 - NOSOTROS.HTML)
-   =================================================== */
+/* NOSOTROS */
 .about-section {
   padding: 85px 0;
 }
@@ -759,9 +784,7 @@ ul {
   color: var(--text-muted);
 }
 
-/* ===================================================
-   CONTACTO (PÁGINA 5 - CONTACTO.HTML)
-   =================================================== */
+/* CONTACTO */
 .contact-section {
   padding: 85px 0;
 }
@@ -838,7 +861,6 @@ ul {
   color: var(--primary-color);
 }
 
-/* SELECTORES Y PSEUDOCLASES :FOCUS EXIGIDOS */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -909,9 +931,7 @@ ul {
   margin-bottom: 24px;
 }
 
-/* ===================================================
-   PIE DE PÁGINA (FOOTER)
-   =================================================== */
+/* FOOTER */
 .footer-main {
   background-color: var(--primary-color);
   color: #94a3b8;
@@ -961,9 +981,7 @@ ul {
   font-size: 0.85rem;
 }
 
-/* ===================================================
-   DISEÑO RESPONSIVE (MEDIA QUERIES OBLIGATORIAS)
-   =================================================== */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .header-container {
     flex-direction: column;

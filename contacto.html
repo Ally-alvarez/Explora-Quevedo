@@ -12,7 +12,6 @@
 </head>
 <body class="page-contacto">
 
-  <!-- CABECERA PRINCIPAL Y MENÚ DE NAVEGACIÓN -->
   <header class="header-main">
     <div class="header-container">
       <a href="index.html" class="brand-link">
@@ -36,7 +35,6 @@
   </header>
 
   <main>
-    <!-- ENCABEZADO DE SECCIÓN -->
     <section class="page-banner">
       <div class="container text-center">
         <span class="heading-tag">Canales Oficiales</span>
@@ -45,12 +43,10 @@
       </div>
     </section>
 
-    <!-- SECCIÓN DE CONTACTO Y FORMULARIO -->
     <section class="contact-section">
       <div class="container">
         <div class="contact-grid">
 
-          <!-- INFORMACIÓN Y CANALES DE ATENCIÓN -->
           <aside class="contact-info-panel">
             <span class="heading-tag">Atención Personalizada</span>
             <h2>Nuestras Oficinas</h2>
@@ -89,10 +85,8 @@
             </div>
           </aside>
 
-          <!-- FORMULARIO SEMÁNTICO EXIGIDO POR LA RÚBRICA -->
           <div class="form-container">
 
-            <!-- MENSAJE DE CONFIRMACIÓN (OCULTO INICIALMENTE) -->
             <div id="mensaje-exito" class="alert-success" style="display: none;">
               <div class="success-icon">✓</div>
               <h3>¡Solicitud Recibida con Éxito!</h3>
@@ -104,10 +98,8 @@
               <button type="button" id="btn-nueva-solicitud" class="btn-primary">Enviar otra solicitud</button>
             </div>
 
-            <!-- FORMULARIO PRINCIPAL -->
             <form id="formulario-contacto" class="contact-form">
               
-              <!-- NOMBRE COMPLETO Y CORREO ELECTRÓNICO -->
               <div class="form-row">
                 <div class="form-group">
                   <label for="nombre">Nombre Completo *</label>
@@ -119,27 +111,25 @@
                 </div>
               </div>
 
-              <!-- TELÉFONO Y DESTINO / ACTIVIDAD -->
               <div class="form-row">
                 <div class="form-group">
                   <label for="telefono">Teléfono / WhatsApp *</label>
                   <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0987654321" required>
                 </div>
                 <div class="form-group">
-                  <label for="destino">Destino o Actividad Principal *</label>
+                  <label for="destino">Destino o Atractivo Principal *</label>
                   <select id="destino" name="destino" required>
                     <option value="" disabled selected>Seleccione un atractivo</option>
-                    <option value="Malecón del Río Quevedo">Malecón del Río Quevedo</option>
-                    <option value="Puente Velasco Ibarra">Puente Velasco Ibarra</option>
-                    <option value="Paseos en Bote por el Río">Paseos en Bote por el Río</option>
-                    <option value="Parque Central e Iglesia San José">Parque Central e Iglesia San José</option>
-                    <option value="Balnearios de Agua Dulce">Balnearios de Agua Dulce</option>
-                    <option value="Fincas Cacaoteras del Río">Fincas Cacaoteras del Río</option>
+                    <option value="1. Malecón del Río Quevedo">1. Malecón del Río Quevedo</option>
+                    <option value="2. Puente Velasco Ibarra">2. Puente Velasco Ibarra</option>
+                    <option value="3. Paseos en Bote por el Río Quevedo">3. Paseos en Bote por el Río Quevedo</option>
+                    <option value="4. Parque Central e Iglesia San José">4. Parque Central e Iglesia San José</option>
+                    <option value="5. Balnearios de Agua Dulce">5. Balnearios de Agua Dulce</option>
+                    <option value="6. Fincas Cacaoteras del Río">6. Fincas Cacaoteras del Río</option>
                   </select>
                 </div>
               </div>
 
-              <!-- FECHA Y NÚMERO DE PERSONAS -->
               <div class="form-row">
                 <div class="form-group">
                   <label for="fecha">Fecha Estimada de Visita *</label>
@@ -151,26 +141,24 @@
                 </div>
               </div>
 
-              <!-- TIPO DE SERVICIO O PAQUETE -->
               <div class="form-group">
-                <label for="servicio">Tipo de Servicio o Paquete *</label>
+                <label for="servicio">Tipo de Servicio o Paquete (6 Opciones) *</label>
                 <select id="servicio" name="servicio" required>
                   <option value="" disabled selected>Seleccione su paquete turístico</option>
-                  <option value="Quevedo Histórico y Fluvial ($20.00)">Quevedo Histórico y Fluvial ($20.00)</option>
-                  <option value="Ruta Balnearios de Agua Dulce ($30.00)">Ruta Balnearios de Agua Dulce ($30.00)</option>
-                  <option value="Finca Cacaotera 'Pepa de Oro' ($28.00)">Finca Cacaotera 'Pepa de Oro' ($28.00)</option>
-                  <option value="Quevedo Total 2D/1N ($75.00)">Quevedo Total 2D/1N ($75.00)</option>
-                  <option value="Servicio Privado Personalizado">Servicio Privado Personalizado</option>
+                  <option value="Tour Malecón y Miradores ($15.00)">1. Tour Malecón y Miradores ($15.00 / pers.)</option>
+                  <option value="Ruta Puente Velasco Ibarra ($18.00)">2. Ruta Puente Velasco Ibarra ($18.00 / pers.)</option>
+                  <option value="Paseo en Bote por el Río ($20.00)">3. Paseo en Bote por el Río ($20.00 / pers.)</option>
+                  <option value="Circuito Parque & San José ($12.00)">4. Circuito Parque & San José ($12.00 / pers.)</option>
+                  <option value="Ruta Balnearios de Agua Dulce ($30.00)">5. Ruta Balnearios de Agua Dulce ($30.00 / pers.)</option>
+                  <option value="Finca Cacaotera 'Pepa de Oro' ($28.00)">6. Finca Cacaotera 'Pepa de Oro' ($28.00 / pers.)</option>
                 </select>
               </div>
 
-              <!-- MENSAJE O REQUERIMIENTOS -->
               <div class="form-group">
                 <label for="mensaje">Mensaje o Requerimientos Especiales</label>
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique requerimientos específicos de su grupo (niños, personas mayores, alimentación, etc.)..."></textarea>
               </div>
 
-              <!-- BOTÓN DE ENVÍO -->
               <button type="submit" class="btn-primary btn-block">Enviar Solicitud de Reserva</button>
             </form>
 
@@ -181,7 +169,6 @@
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA (FOOTER) -->
   <footer class="footer-main">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -215,7 +202,6 @@
     </div>
   </footer>
 
-  <!-- SCRIPT PARA CONFIRMACIÓN DIRECTA (SIN ERROR 405 EN GITHUB PAGES) -->
   <script>
     const form = document.getElementById('formulario-contacto');
     const mensajeExito = document.getElementById('mensaje-exito');
