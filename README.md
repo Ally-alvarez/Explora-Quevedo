@@ -1,21 +1,37 @@
 # Explora Quevedo - Portal Turístico Oficial
 
-Sitio web promocional desarrollado para la agencia turística ficticia **Explora Quevedo**, enfocado en la difusión del turismo urbano, fluvial, gastronómico y agroturístico de Quevedo (Provincia de Los Ríos, Ecuador).
+## Datos del Estudiante
+* **Nombre del estudiante:** Gislayne Alvarez
+* **Destino turístico asignado:** Quevedo, Provincia de Los Ríos, Ecuador (Turismo urbano, gastronomía, parques, río, alojamiento y actividades locales).
 
-## Información de la Estudiante
-- **Estudiante:** Gislayne Allyson Alvarez Vargas
-- **Destino Asignado:** Quevedo - Los Ríos
-- **Materia:** Diseño de Sitios Web
-- **Docente:** Examen Práctico Parcial
+---
 
-## Arquitectura de Páginas
-1. **Inicio (`index.html`):** Identidad corporativa, Hero fluvial, estadísticas y llamadas de acción.
-2. **Lugares Turísticos (`destinos.html`):** Catálogo de 6 atractivos con ubicación y actividades recomendadas.
-3. **Servicios y Paquetes (`servicios.html`):** 4 paquetes con precios referenciales y desglose de inclusiones.
-4. **Nosotros (`nosotros.html`):** Historia, misión, visión, valores y motivos para visitar Quevedo.
-5. **Contacto (`contacto.html`):** Formulario semántico validado para solicitudes de reserva sin errores de servidor.
+## Descripción del Proyecto
+**Explora Quevedo** es una plataforma web desarrollada para una agencia turística local con el fin de promocionar el patrimonio cultural, fluvial, natural y productivo del cantón Quevedo. 
 
-## Tecnologías Implementadas
-- HTML5 Semántico y accesible
-- CSS3 (Flexbox, CSS Grid, Media Queries, Box Model)
-- Git & GitHub Pages
+El sitio cuenta con una arquitectura de 5 páginas enlazadas mediante navegación semántica:
+1. **Inicio (`index.html`):** Portada principal con banner Hero adaptativo, servicios clave destacados y llamado a la acción.
+2. **Lugares Turísticos (`destinos.html`):** Catálogo con 6 atractivos oficiales del cantón (Malecón del Río Quevedo, Puente Velasco Ibarra, Paseos en Bote, Parque Central e Iglesia San José, Balnearios de Agua Dulce y Fincas Cacaoteras).
+3. **Servicios (`servicios.html`):** Tarifario con 4 paquetes turísticos detallados, especificaciones de servicio y costos por persona.
+4. **Nosotros (`nosotros.html`):** Reseña histórica, misión, visión, valores corporativos y justificación turística del cantón.
+5. **Contacto (`contacto.html`):** Canales oficiales de atención y formulario semántico con validaciones nativas y confirmación en pantalla.
+
+---
+
+## Tecnologías Utilizadas
+* **HTML5:** Marcado semántico (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<form>`).
+* **CSS3:** Hoja de estilos externa con Variables CSS, Box Model, diseño adaptable mediante CSS Flexbox, CSS Grid y Media Queries.
+* **JavaScript:** Manejo de eventos del DOM para confirmación visual inmediata en el formulario sin recarga de página.
+* **Git & GitHub:** Sistema de control de versiones y gestión de repositorio en rama `main`.
+* **GitHub Pages:** Despliegue continuo y alojamiento web público en la nube bajo protocolo seguro HTTPS.
+
+---
+
+## Captura del Sitio
+![Vista previa de Explora Quevedo](images/hero.webp)
+
+---
+
+## Enlaces del Proyecto
+* **URL del repositorio en GitHub:** [https://github.com/Ally-alvarez/Explora-Quevedo](https://github.com/Ally-alvarez/Explora-Quevedo)
+* **URL del sitio publicado (GitHub Pages):** [https://ally-alvarez.github.io/Explora-Quevedo/](https://ally-alvarez.github.io/Explora-Quevedo/)
